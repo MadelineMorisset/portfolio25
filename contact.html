@@ -3,27 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="Bienvenue sur le portfolio de Madeline Ricateau, Développeuse Web et Web Mobile Junior, passionnée par son métier."
+        />
         <title>Portfolio MR</title>
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <header>
-            <img src="" alt="" class="logo_mr" />
+            <a href="index.html">
+                <img
+                    src="img/logo_mr.svg"
+                    alt="Le logo, intitulé « Dreams' Legacy » ('L'héritage des rêves'), a été créé par Madeline Ricateau. Il présente un dessin blanc sur fond bordeaux, représentant une main dont l'index touche une lune décroissante. Un tatouage bordeaux orne l'intérieur du poignet, illustrant la lune de la trinité : un motif composé de trois phases lunaires alignées, passant du croissant à la pleine lune, puis à la lune décroissante. Des scintillements subtils apparaissent autour des doigts. De chaque côté du poignet, un rameau d'olivier se déploie. Le fond, évoque un sceau de cire bordeaux. De plus un effet arrondi et translucide, donnant l'impression d'un vent tourbillonnant semble être présent autour de l'image, sans être totalement clos."
+                    class="logo_mr"
+                />
+            </a>
             <nav>
                 <ul class="nav_bloc_liste">
-                    <li class="accueil nav_liste">Accueil</li>
-                    <li class="cv nav_liste">Mon CV</li>
-                    <li class="contact nav_liste">Me contacter</li>
+                    <li class="accueil nav_liste">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="cv nav_liste"><a href="#">Mon CV</a></li>
+                    <li class="contact nav_liste">
+                        <a href="contact.html">Me contacter</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 class="titre_principal titre_formulaire_contact"></h1>
+            <h1 class="titre_principal titre_formulaire_contact">
+                Développeuse Front end
+            </h1>
             <form>
                 <section class="form_section form_prenom">
-                    <label class="form_label" for="prenom">Prénom</label>
+                    <label class="form_label" for="prenom">Prénom :</label>
                     <input
                         class="form_input"
                         type="text"
@@ -33,7 +48,7 @@
                     />
                 </section>
                 <section class="form_section form_nom">
-                    <label class="form_label" for="nom">Nom</label>
+                    <label class="form_label" for="nom">Nom :</label>
                     <input
                         class="form_input"
                         type="text"
@@ -43,7 +58,7 @@
                     />
                 </section>
                 <section class="form_section form_tel">
-                    <label class="form_label" for="tel">Téléphone</label>
+                    <label class="form_label" for="tel">Téléphone :</label>
                     <input
                         class="form_input"
                         type="tel"
@@ -53,7 +68,7 @@
                     />
                 </section>
                 <section class="form_section form_mail">
-                    <label class="form_label" for="mail">Email</label>
+                    <label class="form_label" for="mail">E-mail :</label>
                     <input
                         class="form_input"
                         type="email"
@@ -63,7 +78,7 @@
                     />
                 </section>
                 <section class="form_section form_objet_message">
-                    <label class="form_label" for="objet">Objet</label>
+                    <label class="form_label" for="objet">Objet :</label>
                     <input
                         class="form_input"
                         type="text"
@@ -73,7 +88,7 @@
                     />
                 </section>
                 <section class="form_section form_message">
-                    <label class="form_label" for="message">Message</label>
+                    <label class="form_label" for="message">Message :</label>
                     <textarea
                         class="form_input input_textarea"
                         id="message"
@@ -84,32 +99,43 @@
                 <button type="submit">Envoyer</button>
             </form>
             <div class="haut_page">
-                <img
-                    src=""
-                    alt="Retour en haut de page"
-                    class="haut_page_logo"
-                />
+                <i class="fa-solid fa-circle-up haut_page_logo"></i>
             </div>
         </main>
         <footer>
             <div class="footer_conteneur_gauche">
                 <div class="footer_conteneur_adresse">
-                    <img src="" alt="" class="footer_adresse_logo" />
-                    <span class="footer_adresse_ville"></span>
+                    <i class="fa-solid fa-location-dot footer_adresse_logo"></i>
+                    <!-- À gérer plus tard avec iframe pour afficher l'emplacement sur GG Map dans une modale -->
+                    <span class="footer_adresse_ville"
+                        >Chasseneuil-du-Poitou</span
+                    >
                 </div>
                 <div class="footer_conteneur_contact">
-                    <img src="" alt="" class="footer_contact_logo" />
-                    <a href="#" class="footer_contact_lien"></a>
+                    <i class="fa-solid fa-envelope footer_contact_logo"></i>
+                    <a href="contact.html" class="footer_contact_lien"
+                        >Formulaire de contact</a
+                    >
                 </div>
             </div>
             <div class="footer_conteneur_droite">
                 <div class="footer_conteneur_github">
-                    <img src="" alt="" class="footer_github_logo" />
-                    <a href="#" class="footer_github_lien">GitHub</a>
+                    <i
+                        class="fa-brands fa-square-github footer_github_logo"
+                    ></i>
+                    <a
+                        href="https://github.com/MadelineMorisset"
+                        class="footer_github_lien"
+                        >GitHub</a
+                    >
                 </div>
                 <div class="footer_conteneur_linkedin">
-                    <img src="" alt="" class="footer_linkedin_logo" />
-                    <a href="#" class="footer_linkedin_lien">LinkedIn</a>
+                    <i class="fa-brands fa-linkedin footer_linkedin_logo"></i>
+                    <a
+                        href="https://www.linkedin.com/in/madelinemorisset/"
+                        class="footer_linkedin_lien"
+                        >LinkedIn</a
+                    >
                 </div>
             </div>
         </footer>
