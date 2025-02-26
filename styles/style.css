@@ -1,0 +1,31 @@
+:root {
+    /* colors */
+    --red: #770d29;
+    --red-wine: #590219;
+    --white: #fff;
+    --dark-white: #fafafa;
+    --red: #000;
+
+    /* fonts */
+    --titles: "Grenze", serif;
+    --text: "Sofia Sans Condensed", serif;
+    --text-regular-mobile: 400;
+    --text-medium-mobile: 500;
+    --text-style-mobile: italic;
+
+    /* font weight and style mobile*/
+    --h1-mobile: 36px;
+    --h2-mobile: 24px;
+    --h3-mobile: 18px;
+    --h4-mobile: 16px;
+    --subtitle-mobile-size: 20px;
+    --text-mobile-size: 16px;
+
+    /* fonts weight and style desktop*/
+    --h1-mobile: 64px;
+    --h2-mobile: 52px;
+    --h3-mobile: 34px;
+    --h4-mobile: 30px;
+    --subtitle-mobile-size: 36px;
+    --text-mobile-size: 24px;
+}
