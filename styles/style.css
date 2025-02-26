@@ -1,10 +1,12 @@
 :root {
     /* colors */
+    --pink-shadow: #be2a51;
     --red: #770d29;
     --red-wine: #590219;
     --white: #fff;
     --dark-white: #fafafa;
-    --red: #000;
+    --black: #000;
+    --black-shadow: #0000009d;
 
     /* fonts */
     --titles: "Grenze", serif;
@@ -22,10 +24,79 @@
     --text-mobile-size: 16px;
 
     /* fonts weight and style desktop*/
-    --h1-mobile: 64px;
-    --h2-mobile: 52px;
-    --h3-mobile: 34px;
-    --h4-mobile: 30px;
-    --subtitle-mobile-size: 36px;
-    --text-mobile-size: 24px;
+    --h1-desktop: 64px;
+    --h2-desktop: 52px;
+    --h3-desktop: 34px;
+    --h4-desktop: 30px;
+    --subtitle-desktop-size: 36px;
+    --text-desktop-size: 24px;
+}
+
+/* Global */
+body {
+    box-sizing: border-box;
+}
+
+.texte {
+  font-family: var(--text);
+}
+
+header,
+footer {
+    background-color: var(--red-wine);
+    color: var(--white);
+}
+
+header, nav {
+  height: fit-content;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  box-shadow: 0px 4px 10px var(--black-shadow);
+  position: fixed;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 14px;
+}
+
+.logo_mr {
+  width: 50px;
+  height: 50px;
+}
+
+.nav_bloc_liste {
+  display: flex;
+  align-items: center;
+  font-size: var(--subtitle-mobile-size);
+  font-weight: var(--text-medium-mobile);
+}
+
+.nav_liste {
+  padding: 0 15px;
+  transition: font-weight 0.3s ease-in-out;
+}
+
+.nav_liste:hover {
+  font-weight: 700;
+}
+
+.nav_liste:active {
+  text-shadow: 0px 0 20px var(--pink-shadow);
+}
+
+.nav_liste_lien {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.cv {
+  border-left: solid 1px var(--white);
+  border-right: solid 1px var(--white);
 }
