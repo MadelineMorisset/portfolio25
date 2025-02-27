@@ -96,8 +96,10 @@ header{
 main {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
+
 .preface {
   width: 90%;
   margin-top: 130px;
@@ -118,6 +120,27 @@ text-align: center;
   margin-top: -5px;
   margin-left: -4px;
 }
+
+.presentation_intro {
+  height: 1000px;
+  margin-top: -5px;
+  padding: 0 15px;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 70%, 0 60%);
+}
+.presentation_titre {
+  margin: 30px 0;
+  font-size: var(--h2-mobile);
+  text-decoration: underline;
+}
+.presentation_texte {
+  margin: 20px 0;
+  font-size: var(--text-mobile-size);
+  font-weight: var(--text-regular-mobile);
+}
+
 
 
 /* Footer */
