@@ -39,6 +39,9 @@ body {
 .texte {
   font-family: var(--text);
 }
+.titre {
+  font-family: var(--titles);
+}
 header,
 footer {
     background-color: var(--red-wine);
@@ -87,6 +90,33 @@ header{
 .cv {
   border-left: solid 1px var(--white);
   border-right: solid 1px var(--white);
+}
+
+/* Main */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.preface {
+  width: 90%;
+  margin-top: 130px;
+}
+.preface_conteneur{
+text-align: center;
+}
+.preface_titre{
+  font-size: var(--h1-mobile);
+}
+.preface_bonjour{
+  margin-top: 40px;
+  font-size: var(--subtitle-mobile-size);
+  font-weight: var(--text-medium-mobile);
+}
+.preface_illustration {
+  width: 242px;  
+  margin-top: -5px;
+  margin-left: -4px;
 }
 
 
