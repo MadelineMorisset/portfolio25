@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     /* colors */
     --pink-shadow: #be2a51;
@@ -30,6 +31,40 @@
     --h4-desktop: 30px;
     --subtitle-desktop-size: 36px;
     --text-desktop-size: 24px;
+}
+
+/* Animations */
+@keyframes jello {
+  10% {
+    transform: none;
+  }
+  20% {
+    transform: skewX(-10deg) skewY(-10deg);
+  }
+  30% {
+    transform: skewX(6deg) skewY(6deg);
+  }
+  40% {
+    transform: skewX(-3deg) skewY(-3deg);
+  }
+  50% {
+    transform: skewX(1.8deg) skewY(1.8deg);
+  }
+  60% {
+    transform: skewX(-0.8deg) skewY(-0.8deg);
+  }
+  70% {
+    transform: skewX(0.86deg) skewY(0.6deg);
+  }
+  80% {
+    transform: skewX(-0.4deg) skewY(-0.4deg);
+  }
+  90% {
+    transform: skewX(0.1deg) skewY(0.1deg);
+}
+  100% {
+    transform: none;
+  }
 }
 
 /* Global */
@@ -226,10 +261,19 @@ text-align: center;
 }
 .savoir_plus_conteneur {
   margin: auto;
+  text-shadow: 2px 2px 8px var(--black-shadow);
 }
 .savoir_plus_lien {
   font-size: var(--h2-mobile);
   color: var(--white);
+  text-decoration: none;
+  text-shadow: 2px 2px 8px var(--black-shadow);
+}
+.savoir_plus_lien:hover {
+  text-decoration: underline;
+}
+.savoir_plus_lien:active {
+  text-shadow: none;
 }
 .savoir_plus_logo {
   margin-right: 10px;
@@ -241,6 +285,7 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 999;
+  box-shadow: 0 -2px 10px 0 var(--pink-shadow);
 }
 .footer_conteneur {
   display: flex;
@@ -251,7 +296,22 @@ footer {
 .footer_lien {
     color: var(--white);
 }
-.footer_logo { 
-  width: 27px;
-  height: 27px;
+.bouton_social {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-white);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 2px 2px 8px 0 var(--black-shadow);
+}
+.bouton_social:hover {
+  animation: jello 3s infinite;
+  -webkit-animation: jello 1.5s;
+}
+.bouton_social:active {
+  box-shadow: inset 2px 2px 8px 0 var(--black-shadow);
+}
+.footer_logo {
+  font-size: 27px;
+  color: var(--red-wine);
 }
