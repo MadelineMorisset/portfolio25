@@ -143,11 +143,11 @@ main {
 .preface_conteneur{
 text-align: center;
 }
-.preface_titre{
+.titre_principal{
   font-size: var(--h1-mobile);
+  margin-bottom: 40px;
 }
 .preface_bonjour{
-  margin-top: 40px;
   font-size: var(--subtitle-mobile-size);
   font-weight: var(--text-medium-mobile);
 }
@@ -277,6 +277,22 @@ text-align: center;
 }
 .savoir_plus_logo {
   margin-right: 10px;
+}
+
+form{
+  width: 100%;
+  padding: 0 15px;
+}
+.form_section {
+  width: 100%;
+  font-size: var(--subtitle-mobile-size);
+  font-weight: var(--text-medium-mobile);
+}
+.form_label {
+  width: 100%;
+}
+.form_input {
+  width: 100%;
 }
 
 /* Footer */
