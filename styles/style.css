@@ -7,7 +7,7 @@
     --white: #fff;
     --dark-white: #fafafa;
     --black: #000;
-    --black-shadow: #0000009d;
+    --black-shadow: #00000052;
 
     /* fonts */
     --titles: "Grenze", serif;
@@ -16,7 +16,7 @@
     --text-medium-mobile: 500;
     --text-style-mobile: italic;
 
-    /* font weight and style mobile*/
+    /* font size */
     --h1-mobile: 36px;
     --h2-mobile: 24px;
     --h3-mobile: 18px;
@@ -282,17 +282,52 @@ text-align: center;
 form{
   width: 100%;
   padding: 0 15px;
+  margin-bottom: 150px;
 }
 .form_section {
   width: 100%;
-  font-size: var(--subtitle-mobile-size);
-  font-weight: var(--text-medium-mobile);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
 }
 .form_label {
   width: 100%;
+  height: fit-content;
+  margin-bottom: 15px;
+  font-size: var(--subtitle-mobile-size);
+  font-weight: var(--text-medium-mobile);
+  text-shadow: 0px 4px 6px var(--black-shadow);
 }
 .form_input {
   width: 100%;
+  height: 26px;
+  border: solid 1px var(--red-wine);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: var(--text-mobile-size);
+  font-weight: var(--text-regular-mobile);
+  font-style: var(--text-style-mobile);
+  background-color: var(--dark-white);
+}
+.input_textarea {
+  height: 270px;
+  margin-bottom: 60px;
+}
+.bouton_formulaire {
+  width: 100%;
+  height: 72px;
+  font-size: var(--h2-mobile);
+  color: var(--white);
+  background-color: var(--red);
+  border: solid 1px var(--red-wine);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px var(--black-shadow);
+}
+.bouton_formulaire:hover {
+  background-color: var(--red-wine);
+}
+.bouton_formulaire:active {
+  box-shadow: inset 2px 2px 8px 0 var(--black-shadow);
 }
 
 /* Footer */
