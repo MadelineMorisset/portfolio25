@@ -330,6 +330,34 @@ form{
   box-shadow: inset 2px 2px 8px 0 var(--black-shadow);
 }
 
+.haut_page {
+  position: fixed;
+  width: 37px;
+  height: 37px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--white);
+  border-radius: 50px;
+  bottom: 105px;
+  right: 5px;
+  box-shadow: 0px 4px 6px var(--black-shadow);
+}
+.haut_page:hover {
+  animation: jello 3s infinite;
+  -webkit-animation: jello 1.5s;
+}
+.haut_page:active {
+  box-shadow: inset 2px 2px 8px 0 var(--black-shadow);
+}
+.haut_page_logo {
+  width: 35px;
+  height: 35px;
+  color: var(--red-wine);
+}
+
+
 /* Footer */
 footer {
   width: 100%;
