@@ -310,6 +310,9 @@ form{
   font-style: var(--text-style-mobile);
   background-color: var(--dark-white);
 }
+.form_input:active {
+  border: solid 2px var(--red-wine);
+}
 .input_textarea {
   height: 270px;
   margin-bottom: 60px;
