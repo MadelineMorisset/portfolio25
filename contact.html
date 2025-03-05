@@ -10,8 +10,8 @@
         <title>Portfolio MR</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- CSS -->
-        <link rel="stylesheet" href="styles/reset_css.css" />
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/reset_css.css" />
+        <link rel="stylesheet" href="assets/styles/style.css" />
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
             <div class="header_container">
                 <a href="index.html">
                     <img
-                        src="img/logo_mr.svg"
+                        src="assets/img/logo_mr.svg"
                         alt="Le logo, intitulé « Dreams' Legacy » ('L'héritage des rêves'), a été créé par Madeline Ricateau. Il présente un dessin blanc sur fond bordeaux, représentant une main dont l'index touche une lune décroissante. Un tatouage bordeaux orne l'intérieur du poignet, illustrant la lune de la trinité : un motif composé de trois phases lunaires alignées, passant du croissant à la pleine lune, puis à la lune décroissante. Des scintillements subtils apparaissent autour des doigts. De chaque côté du poignet, un rameau d'olivier se déploie. Le fond, évoque un sceau de cire bordeaux. De plus un effet arrondi et translucide, donnant l'impression d'un vent tourbillonnant semble être présent autour de l'image, sans être totalement clos."
                         class="logo_mr"
                     />
@@ -54,7 +54,7 @@
             </h1>
             <form>
                 <section class="form_section form_prenom">
-                    <label class="form_label texte" for="prenom">Prénom :</label>
+                    <label class="form_label texte" for="prenom" required>Prénom : *</label>
                     <input
                         class="form_input texte"
                         type="text"
@@ -64,7 +64,7 @@
                     />
                 </section>
                 <section class="form_section form_nom texte">
-                    <label class="form_label texte" for="nom">Nom :</label>
+                    <label class="form_label texte" for="nom" required>Nom : *</label>
                     <input
                         class="form_input texte"
                         type="text"
@@ -74,7 +74,7 @@
                     />
                 </section>
                 <section class="form_section form_tel texte">
-                    <label class="form_label texte" for="tel">Téléphone :</label>
+                    <label class="form_label texte" for="tel" required>Téléphone : </label>
                     <input
                         class="form_input texte"
                         type="tel"
@@ -84,7 +84,7 @@
                     />
                 </section>
                 <section class="form_section form_mail texte">
-                    <label class="form_label texte" for="mail">E-mail :</label>
+                    <label class="form_label texte" for="mail" required>E-mail : *</label>
                     <input
                         class="form_input texte"
                         type="email"
@@ -94,7 +94,7 @@
                     />
                 </section>
                 <section class="form_section form_objet_message texte">
-                    <label class="form_label texte" for="objet">Objet :</label>
+                    <label class="form_label texte" for="objet" required>Objet : *</label>
                     <input
                         class="form_input texte"
                         type="text"
@@ -104,7 +104,7 @@
                     />
                 </section>
                 <section class="form_section form_message texte">
-                    <label class="form_label texte" for="message">Message :</label>
+                    <label class="form_label texte" for="message" required>Message : *</label>
                     <textarea
                         class="form_input input_textarea texte"
                         id="message"
