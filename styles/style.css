@@ -9,7 +9,7 @@
     --black: #000;
     --black-shadow: #00000052;
 
-    /* fonts */
+    /* font, weight, style */
     --titles: "Grenze", serif;
     --text: "Sofia Sans Condensed", serif;
     --text-regular-mobile: 400;
@@ -91,6 +91,7 @@ header{
   width: 100%;
   box-shadow: 0px 4px 10px var(--black-shadow);
   position: fixed;
+  border-bottom: solid 1px var(--white);
   z-index: 1000;
 }
 .header_container {
@@ -180,7 +181,7 @@ text-align: center;
 
 .presentation_cards {
   margin-top: -440px;
-  z-index: 50;
+  z-index: 5;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -332,17 +333,18 @@ form{
 
 .haut_page {
   position: fixed;
-  width: 37px;
-  height: 37px;
-  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  background-color: var(--dark-white);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px var(--white);
+  border: solid 2px var(--red-wine);
   border-radius: 50px;
-  bottom: 105px;
+  bottom: 103px;
   right: 5px;
   box-shadow: 0px 4px 6px var(--black-shadow);
+  z-index: 10;
 }
 .haut_page:hover {
   animation: jello 3s infinite;
@@ -352,8 +354,7 @@ form{
   box-shadow: inset 2px 2px 8px 0 var(--black-shadow);
 }
 .haut_page_logo {
-  width: 35px;
-  height: 35px;
+  font-size: 30px;
   color: var(--red-wine);
 }
 
@@ -364,7 +365,8 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 999;
-  box-shadow: 0 -2px 10px 0 var(--pink-shadow);
+  box-shadow: 0 -2px 10px 0 var(--black-shadow);
+  border-top: solid 1px var(--white);
 }
 .footer_conteneur {
   display: flex;
